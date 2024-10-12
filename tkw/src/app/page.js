@@ -1,16 +1,21 @@
 import Image from "next/image";
 import Hero from "./components/hero/Hero";
+import Navbar from "./components/navbar/Navbar";
 
 export default function Home() {
   return (
     <>
-    <header>
+      <header>
+        <Navbar/>
+      </header>
+      <main>
+        <div>
+          <Hero />
+        </div>
+        <div className="max-w-[1200px] mx-auto px-4">
 
-    </header>
-      <div>
-        <Hero />
-      </div>
-      
+        </div>
+      </main>
     </>
   );
 }

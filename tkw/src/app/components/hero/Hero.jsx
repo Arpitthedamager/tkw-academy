@@ -5,7 +5,7 @@ import Button from "../button/Button";
 
 const Hero = () => {
   return (
-    <div className="relative bg-[url('/hero/hero_bg.jpg')] bg-cover bg-center text-text h-screen flex items-center">
+    <div className="relative bg-[url('/hero/hero_bg.jpg')] bg-cover bg-center h-screen flex items-center">
       <div className="absolute inset-0 bg-black opacity-80" /> {/* Overlay */}
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row items-center text-center  md:text-left h-full z-10">
         <div className="md:w-1/2 p-4 pb-0 mt-20 md:mt-36">
