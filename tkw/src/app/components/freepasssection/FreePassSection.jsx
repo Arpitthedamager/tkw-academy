@@ -22,7 +22,7 @@ const FreePassSection = () => {
         transition={{ duration: 0.5, delay: 0.5 }} // Slow and late animation for the image
       >
         <img
-          src="https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63ff393957c2b740097aa209_Rectangle%2015%20(1).jpg"
+          src="/free-p-section/bg-image.jpg"
           alt="Free Pass"
           className="w-full h-full md:max-w-2xl object-cover"
         />
@@ -30,7 +30,7 @@ const FreePassSection = () => {
         {/* Icon Positioned Over the Image */}
         <div className="absolute top-4 md:right-16 left-auto bottom-0 z-20">
           <img
-            src="https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63ff3a47b8a92133ecc1b2e7_Vector%20(5).png"
+            src="/free-p-section/image.png"
             alt="Icon"
             className="w-full h-auto mr-10"
           />

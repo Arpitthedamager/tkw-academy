@@ -8,21 +8,21 @@ const blogPosts = [
     title: "TOP 5 fights in World Cup",
     description: "Embrace your emotions and self-expression by joining us at the show, in the studio, or on your screen.",
     date: "March 3, 2023",
-    image: "https://cdn.prod.website-files.com/63fce03a21e36b072f5d0ae2/63ff45597e73fe96660aa7c8_Blog%2001.jpg",
+    image: "/blog-s/image.jpg",
     link: "/blog-posts/top-10-fights-in-world-cup"
   },
   {
     title: "Why teeth protection is important",
     description: "Embrace your emotions and self-expression by joining us at the show, in the studio, or on your screen.",
     date: "March 3, 2023",
-    image: "https://cdn.prod.website-files.com/63fce03a21e36b072f5d0ae2/63ff4540f043a25b4ebb4dc1_Blog%2002.jpg",
+    image: "/blog-s/image1.jpg",
     link: "/blog-posts/why-teeth-protection-is-important"
   },
   {
     title: "Breaking Barriers: Women in Martial Arts",
     description: "Embrace your emotions and self-expression by joining us at the show, in the studio, or on your screen.",
     date: "March 3, 2023",
-    image: "https://cdn.prod.website-files.com/63fce03a21e36b072f5d0ae2/640072cd0539cfd3438f18c3_pexels-olia-danilevich-6005459.jpg",
+    image: "/blog-s/image2.jpg",
     link: "/blog-posts/breaking-barriers-women-in-martial-arts"
   }
 ];

@@ -14,7 +14,7 @@ const TrainingProgram = () => {
       time: "12:00 - 14:00",
       link: "/programs/kids-karate-group",
       image:
-        "https://cdn.prod.website-files.com/63fce03a21e36b072f5d0ae2/63ff2abd71f3fd949726f8ed_jyotirmoy-gupta-ryOMte-FerE-unsplash.jpg",
+        "/t-program/image.jpg",
     },
     {
       title: "Teen & Adult Group",
@@ -24,7 +24,7 @@ const TrainingProgram = () => {
       time: "12:00 - 14:00",
       link: "/programs/teen-adult-group",
       image:
-        "https://cdn.prod.website-files.com/63fce03a21e36b072f5d0ae2/63ff2a5bb965c65b18697b1b_Projects%2002.jpg",
+        "/t-program/image1.jpg",
     },
     {
       title: "Traditional Arts",
@@ -34,7 +34,7 @@ const TrainingProgram = () => {
       time: "12:00 - 14:00",
       link: "/programs/traditional-arts",
       image:
-        "https://cdn.prod.website-files.com/63fce03a21e36b072f5d0ae2/63ff2a515cdbc278f1b7ddae_Program%2001.jpg",
+        "/t-program/image2.jpg",
     },
   ];
 
