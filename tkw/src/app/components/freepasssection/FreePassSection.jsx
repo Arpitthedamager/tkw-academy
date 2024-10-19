@@ -17,8 +17,9 @@ const FreePassSection = () => {
       <motion.div
         className="md:block absolute right-0 top-0 bottom-0 z-10"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }} // Slow and late animation for the image
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5, delay: 0.5 }} // Slow and late animation for the image
       >
         <img
           src="https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63ff393957c2b740097aa209_Rectangle%2015%20(1).jpg"
@@ -26,20 +27,18 @@ const FreePassSection = () => {
           className="w-full h-full md:max-w-2xl object-cover"
         />
 
-      {/* Icon Positioned Over the Image */}
-      <div className="absolute top-4 md:right-16 left-auto bottom-0 z-20">
-        <img
-          src="https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63ff3a47b8a92133ecc1b2e7_Vector%20(5).png"
-          alt="Icon"
-          className="w-full h-auto mr-10"
+        {/* Icon Positioned Over the Image */}
+        <div className="absolute top-4 md:right-16 left-auto bottom-0 z-20">
+          <img
+            src="https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63ff3a47b8a92133ecc1b2e7_Vector%20(5).png"
+            alt="Icon"
+            className="w-full h-auto mr-10"
           />
-      </div>
-          </motion.div>
+        </div>
+      </motion.div>
 
       {/* Main Content with Animation */}
-      <div
-        className="bg-black_4"
-      >
+      <div className="bg-black_4">
         <div className="max-w-[1200px] mx-auto px-4 pt-12 pb-20 md:pl-9 text-white z-20 relative">
           <div className="flex flex-col md:flex-row items-start md:text-left text-center">
             {/* Form Section */}
