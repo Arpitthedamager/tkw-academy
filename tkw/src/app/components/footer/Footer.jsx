@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-200 mt-10 pb-6 pt-14">
-          <div className="container mx-auto flex justify-between">
+          <div className="container mx-auto md:flex justify-between">
             <div>
               <div className="">
                 © Martial Arts. All Rights Reserved 2024.
