@@ -50,11 +50,17 @@ const TrainingProgram = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="heading-text text-center md:text-left">
-            <h5 className="uppercase text-tertiary text-lg pl-2">Classes Program</h5>
+            <h5 className="uppercase text-tertiary text-lg pl-2">
+              Classes Program
+            </h5>
             <h2 className="text-4xl font-bold p-2">Training Program</h2>
           </div>
           <div className="flex justify-center md:justify-end mt-4 md:mt-0 md:ml-auto">
-            <Button href="/programs" variant="transparent" className="px-8 h-16">
+            <Button
+              href="/programs"
+              variant="transparent"
+              className="px-8 h-16"
+            >
               View All
             </Button>
           </div>
@@ -73,10 +79,15 @@ const TrainingProgram = () => {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
               >
                 <div className="left-block-content md:flex-1 flex flex-col">
-                  <Link href={program.link} className="text-2xl font-bold text-tertiary py-4">
+                  <Link
+                    href={program.link}
+                    className="text-2xl font-bold text-tertiary py-4"
+                  >
                     {program.title}
                   </Link>
-                  <p className="text-xl text-secondary_text">{program.description}</p>
+                  <p className="text-xl text-secondary_text">
+                    {program.description}
+                  </p>
                   <div className="data-time-block md:flex gap-4 mt-4">
                     <div className="data-block flex items-center">
                       <span className="icon">📅</span>
@@ -88,17 +99,26 @@ const TrainingProgram = () => {
                     </div>
                   </div>
                   <div className="my-8 text-xl">
-                    <Link href={program.link} className="flex hover:text-tertiary">
+                    <Link
+                      href={program.link}
+                      className="flex hover:text-tertiary"
+                    >
                       View More <span className="text-tertiary pl-2">→</span>
                     </Link>
                   </div>
                 </div>
-                <Link href={program.link} className="image-link-block md:w-1/2 mt-4 md:mt-0 md:ml-4">
-                  <img
+                <Link
+                  href={program.link}
+                  className="image-link-block md:w-1/2 mt-4 md:mt-0 md:ml-4"
+                >
+                  <motion.img
                     src={program.image}
                     alt={program.title}
                     className="w-full h-[250px] object-cover rounded-lg md:ml-10"
                     style={{ maxWidth: "500px", minWidth: "250px" }}
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.1 }} // Zoom in effect on hover
+                    transition={{ duration: 0.3 }} // Smooth transition
                   />
                 </Link>
                 <hr className="h-0 bg-secondary_text my-5 md:visible" />

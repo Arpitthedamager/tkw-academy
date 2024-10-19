@@ -6,6 +6,7 @@ import TrainingProgram from "./components/trainingprogram/TrainingProgram";
 import FreePassSection from "./components/freepasssection/FreePassSection";
 import FAQ from "./components/faq/FAQ";
 import BlogList from "./components/bloglist/BlogList";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <FreePassSection/>
           <FAQ/>
           <BlogList/>
+          <Footer/>
         {/* </div> */}
       </main>
     </>
