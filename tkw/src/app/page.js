@@ -4,6 +4,8 @@ import Navbar from "./components/navbar/Navbar";
 import MartialArtsSection from "./components/martialartssection/MartialArtsSection";
 import TrainingProgram from "./components/trainingprogram/TrainingProgram";
 import FreePassSection from "./components/freepasssection/FreePassSection";
+import FAQ from "./components/faq/FAQ";
+import BlogList from "./components/bloglist/BlogList";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
           {/* <MartialArtsSection /> */}
           <TrainingProgram/>
           <FreePassSection/>
+          <FAQ/>
+          <BlogList/>
         {/* </div> */}
       </main>
     </>

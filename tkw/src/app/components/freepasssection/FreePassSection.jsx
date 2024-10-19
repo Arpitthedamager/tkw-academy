@@ -18,7 +18,7 @@ const FreePassSection = () => {
         className="md:block absolute right-0 top-0 bottom-0 z-10"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }} // Slow and late animation for the image
+        transition={{ duration: 0.5 }} // Slow and late animation for the image
       >
         <img
           src="https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63ff393957c2b740097aa209_Rectangle%2015%20(1).jpg"
@@ -37,11 +37,8 @@ const FreePassSection = () => {
           </motion.div>
 
       {/* Main Content with Animation */}
-      <motion.div
+      <div
         className="bg-black_4"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }} // Regular animation for the content
       >
         <div className="max-w-[1200px] mx-auto px-4 pt-12 pb-20 md:pl-9 text-white z-20 relative">
           <div className="flex flex-col md:flex-row items-start md:text-left text-center">
@@ -80,11 +77,11 @@ const FreePassSection = () => {
                   <input
                     type="submit"
                     value="Get Pass Now"
-                    className="primary-button w-full px-6 py-3 mt-4 bg-tertiary text-white rounded-lg cursor-pointer"
+                    className="primary-button px-6 py-3 mt-4 bg-tertiary text-black rounded-md cursor-pointer"
                   />
                 </form>
               ) : (
-                <div className="success-message text-green-500">
+                <div className="success-message text-green-500 space-y-4 p-6 pb-40 md:pl-0">
                   Thank you! Your submission has been received!
                 </div>
               )}
@@ -96,7 +93,7 @@ const FreePassSection = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
