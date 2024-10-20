@@ -57,7 +57,7 @@ const TrainingProgram = () => {
           </div>
           <div className="flex justify-center md:justify-end mt-4 md:mt-0 md:ml-auto">
             <Button
-              href="/programs"
+              href="#programs"
               variant="transparent"
               className="px-8 h-16"
             >

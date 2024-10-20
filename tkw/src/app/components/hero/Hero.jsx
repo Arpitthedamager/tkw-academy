@@ -45,7 +45,7 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Button href="/contact-us" variant="solid" className="px-4 py-2 text-lg">
+              <Button href="#contact-us" variant="solid" className="px-4 py-2 text-lg">
                 Enroll Now
               </Button>
             </motion.div>
@@ -56,7 +56,7 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Button href="/programs" variant="transparent" className="px-4 py-2 text-lg">
+              <Button href="#programs" variant="transparent" className="px-4 py-2 text-lg">
                 See Our Classes
               </Button>
             </motion.div>

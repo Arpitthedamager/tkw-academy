@@ -39,7 +39,7 @@ const Footer = () => {
               lobortis vulputate fringilla duis vitae tempor at.
             </p>
             <Button
-              href="/contact-us"
+              href=""
               variant="solid"
               className="px-4 py-2 text-lg"
             >
@@ -89,7 +89,7 @@ const Footer = () => {
               <Link href="/" className="text-white hover:text-tertiary">
                 Home
               </Link>
-              <Link href="/about-us" className="text-white hover:text-tertiary">
+              <Link href="#about-us" className="text-white hover:text-tertiary">
                 About
               </Link>
               <Link href="#events" className="text-white hover:text-tertiary">
@@ -101,7 +101,7 @@ const Footer = () => {
               <Link href="#programs" className="text-white hover:text-tertiary">
                 Programs
               </Link>
-              <Link href="/pricing" className="text-white hover:text-tertiary">
+              <Link href="#pricing" className="text-white hover:text-tertiary">
                 Pricing
               </Link>
             </div>

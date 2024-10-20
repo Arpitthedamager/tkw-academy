@@ -4,10 +4,21 @@ import { motion } from "framer-motion";
 
 const FreePassSection = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({ fullName: '', email: '', phone: '' });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate form submission
+    const { fullName, email, phone } = formData;
+
+    const message = `Free Pass Request:\nName: ${fullName}\nEmail: ${email}\nPhone: ${phone}`;
+    const whatsappNumber = "918445720304"; // Replace with your WhatsApp number
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank');
     setSubmitted(true);
   };
 
@@ -19,14 +30,13 @@ const FreePassSection = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
-        transition={{ duration: 0.5, delay: 0.5 }} // Slow and late animation for the image
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <img
           src="/free-p-section/bg-image.jpg"
           alt="Free Pass"
           className="w-full h-full md:max-w-2xl object-cover"
         />
-
         {/* Icon Positioned Over the Image */}
         <div className="absolute top-4 md:right-16 left-auto bottom-0 z-20">
           <img
@@ -39,7 +49,7 @@ const FreePassSection = () => {
 
       {/* Main Content with Animation */}
       <div className="bg-black_4">
-        <div id="events"  className="max-w-[1200px] mx-auto px-4 pt-12 pb-20 md:pl-9 text-white z-20 relative">
+        <div id="events" className="max-w-[1200px] mx-auto px-4 pt-12 pb-20 md:pl-9 text-white z-20 relative">
           <div className="flex flex-col md:flex-row items-start md:text-left text-center">
             {/* Form Section */}
             <div className="form-contact-us w-full md:mr-96 md:pr-64">
@@ -53,9 +63,10 @@ const FreePassSection = () => {
                   <div className="flex space-x-4">
                     <input
                       type="text"
-                      name="full-name"
+                      name="fullName"
                       placeholder="Full Name"
                       required
+                      onChange={handleChange}
                       className="field-input w-full px-4 py-2 rounded-md bg-transparent border text-white"
                     />
                     <input
@@ -63,6 +74,7 @@ const FreePassSection = () => {
                       name="email"
                       placeholder="Email"
                       required
+                      onChange={handleChange}
                       className="field-input w-full px-4 py-2 rounded-md bg-transparent border text-white"
                     />
                   </div>
@@ -71,6 +83,7 @@ const FreePassSection = () => {
                     name="phone"
                     placeholder="Phone"
                     required
+                    onChange={handleChange}
                     className="field-input w-full px-4 py-2 rounded-md bg-transparent border text-white"
                   />
                   <input
