@@ -7,8 +7,17 @@ import Button from "../button/Button";
 
 const Footer = () => {
   return (
-    <div className="bg-black_3 py-10 relative">
-      <div className="max-w-[1200px] mx-auto px-4">
+    <div className="bg-black_3 py-10 relative overflow-hidden">
+      {/* Background Spot with Framer Motion */}
+      <motion.div
+        className="absolute top-auto -bottom-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-tertiary blur-[200px]"
+        initial={{ opacity: 0, scale: 0.5, translateX: "-50%", translateY: "-50%" }}
+        animate={{ opacity: 1, scale: 1, translateX: "-50%", translateY: "-50%" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        style={{ willChange: 'transform', transformStyle: 'preserve-3d' }}
+      />
+
+      <div className="max-w-[1200px] mx-auto px-4 relative z-10">
         <motion.div
           className="orange-elipse"
           initial={{ scale: 0 }}
@@ -19,11 +28,11 @@ const Footer = () => {
           <div className="mb-6">
             <Image src="/favicon.ico" alt="Yin Yang" width={75} height={75} />
           </div>
-          <div className="text-center  justify-center">
-            <h2 className="text-8xl font-bold text-white">
+          <div className="text-center justify-center">
+            <h2 className="text-5xl md:text-8xl font-bold text-white">
               Let’s Fight Together
             </h2>
-            <p className="text-secondary_text mt-6 mb-14    ">
+            <p className="text-secondary_text mt-6 mb-14 mx-4 md:mx-56 text-base md:text-lg">
               Lorem ipsum dolor sit amet consectetur. Molestie cum ut aliquam
               convallis. Lacus sed velit adipiscing diam. Donec elementum mi
               lobortis vulputate fringilla duis vitae tempor at.
@@ -38,9 +47,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-200 mt-10 pb-6 pt-14">
-          <div className="container mx-auto md:flex justify-between">
-            <div>
-              <div className="">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between">
+            <div className="mb-4 md:mb-0">
+              <div>
                 © Martial Arts. All Rights Reserved 2024.
                 <Link
                   href="/templates/licensing"
@@ -75,7 +84,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex space-x-4 text-xl">
+            <div className="flex flex-wrap justify-center space-x-4 md:text-xl">
               <Link href="/" className="text-white hover:text-tertiary">
                 Home
               </Link>
