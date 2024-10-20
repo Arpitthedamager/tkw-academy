@@ -15,7 +15,7 @@ const FreePassSection = () => {
     const { fullName, email, phone } = formData;
 
     const message = `Free Pass Request:\nName: ${fullName}\nEmail: ${email}\nPhone: ${phone}`;
-    const whatsappNumber = "918445720304"; // Replace with your WhatsApp number
+    const whatsappNumber = "9184457203"; // Replace with your WhatsApp number
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappLink, '_blank');

@@ -1,6 +1,7 @@
 // components/BlogList.js
 "use client";
 import Link from 'next/link';
+import Image from 'next/image'; // Import the Image component from Next.js
 import { motion } from 'framer-motion';
 
 const blogPosts = [
@@ -32,11 +33,11 @@ const BlogList = () => {
     <div className="section bg-black_3">
       <div id="blog" className="base-container w-containermax-w-[1200px] mx-8 md:px-40 pb-20">
         <motion.div
-        id='pricing' 
+          id='pricing' 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1 , delay:0.5 }}
+          transition={{ duration: 1, delay: 0.5 }}
         >
           <div className="section-title-wrapper centered mb-6 text-center"> 
             <h5 className="all-caps-text text-xl text-tertiary">Blog / news</h5>
@@ -60,10 +61,12 @@ const BlogList = () => {
                   transition={{ duration: 0.3 }} // Duration of the zoom effect
                   initial={{ scale: 1 }} // Ensure it starts at normal size
                 >
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    className="image-cover w-full h-auto object-cover"
+                    className="image-cover w-full responsive h-auto object-cover"
+                    width={500} // Adjust according to your needs
+                    height={300} // Adjust according to your needs
                     loading="lazy"
                   />
                 </motion.div>
