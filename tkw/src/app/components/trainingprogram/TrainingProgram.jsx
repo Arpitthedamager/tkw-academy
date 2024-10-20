@@ -40,7 +40,7 @@ const TrainingProgram = () => {
 
   return (
     <div className="section bg-accent text-secondary">
-      <div className="base-container w-container max-w-[1200px] mx-auto px-4 py-36">
+      <div id="programs" className="base-container  w-container max-w-[1200px] mx-auto px-4 py-36">
         {/* Apply motion.div to heading-conten */}
         <motion.div
           className="heading-conten md:flex items-center pb-4"

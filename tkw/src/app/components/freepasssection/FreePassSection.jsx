@@ -39,7 +39,7 @@ const FreePassSection = () => {
 
       {/* Main Content with Animation */}
       <div className="bg-black_4">
-        <div className="max-w-[1200px] mx-auto px-4 pt-12 pb-20 md:pl-9 text-white z-20 relative">
+        <div id="events"  className="max-w-[1200px] mx-auto px-4 pt-12 pb-20 md:pl-9 text-white z-20 relative">
           <div className="flex flex-col md:flex-row items-start md:text-left text-center">
             {/* Form Section */}
             <div className="form-contact-us w-full md:mr-96 md:pr-64">

@@ -10,7 +10,7 @@ const MartialArtsSection = () => {
 
     return (
         <div className="overflow-hidden">
-            <div className="bg-orange-500 h-20"></div>
+            <div id='testimonials' className="bg-orange-500 h-20"></div>
             <div className="max-w-7xl mx-auto px-6 py-12">
                 <motion.div
                     initial="hidden"

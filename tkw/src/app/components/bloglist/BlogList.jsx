@@ -30,8 +30,9 @@ const blogPosts = [
 const BlogList = () => {
   return (
     <div className="section bg-black_3">
-      <div className="base-container w-containermax-w-[1200px] mx-8 md:px-40 pb-20">
-        <motion.div 
+      <div id="blog" className="base-container w-containermax-w-[1200px] mx-8 md:px-40 pb-20">
+        <motion.div
+        id='pricing' 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}

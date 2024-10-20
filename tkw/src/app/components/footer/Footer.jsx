@@ -10,6 +10,7 @@ const Footer = () => {
     <div className="bg-black_3 py-10 relative overflow-hidden">
       {/* Background Spot with Framer Motion */}
       <motion.div
+      id="contact-us"
         className="absolute top-auto -bottom-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-tertiary blur-[200px]"
         initial={{ opacity: 0, scale: 0.5, translateX: "-50%", translateY: "-50%" }}
         animate={{ opacity: 1, scale: 1, translateX: "-50%", translateY: "-50%" }}
@@ -91,13 +92,13 @@ const Footer = () => {
               <Link href="/about-us" className="text-white hover:text-tertiary">
                 About
               </Link>
-              <Link href="/events" className="text-white hover:text-tertiary">
+              <Link href="#events" className="text-white hover:text-tertiary">
                 Events
               </Link>
-              <Link href="/blog" className="text-white hover:text-tertiary">
+              <Link href="#blog" className="text-white hover:text-tertiary">
                 Blog
               </Link>
-              <Link href="/programs" className="text-white hover:text-tertiary">
+              <Link href="#programs" className="text-white hover:text-tertiary">
                 Programs
               </Link>
               <Link href="/pricing" className="text-white hover:text-tertiary">

@@ -35,8 +35,8 @@ const FAQ = () => {
         viewport={{ once: true, amount: 0.4 }} // Trigger once when 40% is in view
         transition={{ duration: 0.5 , delay: 0.5}} // Animation duration
       >
-        <div className="max-w-[1200px] mx-auto px-8 pt-40 pb-36">
-          <div className="flex flex-col md:flex-row">
+        <div id="faq" className="max-w-[1200px] mx-auto px-8 pt-40 pb-36">
+          <div id="about-us" className="flex flex-col md:flex-row">
             <div className="text-center justify-center md:text-left md:w-1/2 mb-4 md:mr-20 md:mb-0">
               <h2 className="text-4xl font-bold mb-8 text-white">
                 How We Work / FAQ

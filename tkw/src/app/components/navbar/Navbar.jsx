@@ -38,14 +38,14 @@ const Navbar = () => {
       ref={ref}
     >
       <div className="max-w-[1200px] mx-auto flex justify-between items-center px-8 py-4">
-        <Link href="/" className="text-2xl flex font-bold">
+        <Link href="#" className="text-2xl flex font-bold">
           <img src="favicon.ico" alt="Logo" className="h-10 w-auto mr-2 pb-2" />
           Martial Arts
         </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex md:flex-row">
-          <Link href="/demo" className="m-6 text-xl hover:text-tertiary">
+          <Link href="#demo" className="m-6 text-xl hover:text-tertiary">
             Demos
           </Link>
           <div className="relative m-6 text-xl group">
@@ -63,7 +63,7 @@ const Navbar = () => {
               ].map((item) => (
                 <Link
                   key={item}
-                  href={`/${item.toLowerCase().replace(" ", "-")}`}
+                  href={`#${item.toLowerCase().replace(" ", "-")}`}
                   className="block px-4 py-2 transition-transform transform hover:bg-tertiary hover:text-white hover:translate-x-1"
                 >
                   {item}
@@ -71,13 +71,13 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <Link href="/programs" className="m-6 text-xl hover:text-tertiary">
+          <Link href="#programs" className="m-6 text-xl hover:text-tertiary">
             Programs
           </Link>
-          <Link href="/events" className="m-6 text-xl hover:text-tertiary">
+          <Link href="#events" className="m-6 text-xl hover:text-tertiary">
             Events
           </Link>
-          <Link href="/blog" className="m-6 text-xl hover:text-tertiary">
+          <Link href="#blog" className="m-6 text-xl hover:text-tertiary">
             Blog
           </Link>
           <Link
@@ -92,7 +92,7 @@ const Navbar = () => {
               <path d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z" />
             </svg>
           </Link>
-          <Button href="/contact-us" variant="solid" className="m-6 mt-0">
+          <Button href="#contact-us" variant="solid" className="m-6 mt-0">
             Enroll Now
           </Button>
         </div>
@@ -132,7 +132,7 @@ const Navbar = () => {
       >
         <div className="flex flex-col p-4 relative">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl flex font-bold">
+            <Link href="#" className="text-2xl flex font-bold">
               <img
                 src="favicon.ico"
                 alt="Logo"
@@ -157,37 +157,37 @@ const Navbar = () => {
             </button>
           </div>
 
-          <Link href="/demo" className="text-2xl my-4">
+          <Link href="#demo" className="text-2xl my-4">
             Demos
           </Link>
-          <Link href="/about" className="my-4">
+          <Link href="#faq" className="my-4">
             About Us
           </Link>
-          <Link href="/instructors" className="my-4">
+          <Link href="#instructors" className="my-4">
             Instructors
           </Link>
-          <Link href="/pricing" className="my-4">
+          <Link href="#pricing" className="my-4">
             Pricing
           </Link>
-          <Link href="/testimonials" className="my-4">
+          <Link href="#testimonials" className="my-4">
             Testimonials
           </Link>
-          <Link href="/faq" className="my-4">
+          <Link href="#faq" className="my-4">
             FAQ
           </Link>
-          <Link href="/contact-us" className="my-4">
+          <Link href="#contact-us" className="my-4">
             Contact Us
           </Link>
-          <Link href="/programs" className="my-4">
+          <Link href="#programs" className="my-4">
             Programs
           </Link>
-          <Link href="/events" className="my-4">
+          <Link href="#events" className="my-4">
             Events
           </Link>
-          <Link href="/blog" className="my-4">
+          <Link href="#blog" className="my-4">
             Blog
           </Link>
-          <Button href="/contact-us" variant="solid" className="my-4">
+          <Button href="#contact-us" variant="solid" className="my-4">
             Enroll Now
           </Button>
         </div>
