@@ -10,7 +10,7 @@ const testimonials = [
     author: "John McMiller",
     title: "Kyokushinkai Karate Champion",
     image:
-      "https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63fdfd6c9d35c5f205791286_Image%2005.jpg",
+      "/about-us/image2.jpg",
   },
   {
     quote:
@@ -18,7 +18,7 @@ const testimonials = [
     author: "Jane Doe",
     title: "Martial Arts Enthusiast",
     image:
-      "https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63fe02736dad4cd31908ddbd_Image%2004.jpg",
+      "/about-us/image3.jpg",
   },
   {
     quote:
@@ -26,7 +26,7 @@ const testimonials = [
     author: "Alice Smith",
     title: "Self-Defense Advocate",
     image:
-      "https://cdn.prod.website-files.com/63fce03a21e36b96315d0a99/63fe0330162371ceb4829237_Image%2006.jpg",
+      "/about-us/image4.jpg",
   },
 ];
 
