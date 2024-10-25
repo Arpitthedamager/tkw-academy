@@ -9,7 +9,7 @@ const Button = ({
   variant = "solid",
   ...props
 }) => {
-  const baseStyle = "px-8 py-4 rounded-md  transition-all duration-300";
+  const baseStyle = "px-4 md:py-4 rounded-md  transition-all duration-300";
 
   const variantStyles = {
     solid:

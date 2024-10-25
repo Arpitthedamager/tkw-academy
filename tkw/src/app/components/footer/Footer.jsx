@@ -10,12 +10,22 @@ const Footer = () => {
     <div className="bg-black_3 py-10 relative overflow-hidden">
       {/* Background Spot with Framer Motion */}
       <motion.div
-      id="contact-us"
+        id="contact-us"
         className="absolute top-auto -bottom-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-tertiary blur-[200px]"
-        initial={{ opacity: 0, scale: 0.5, translateX: "-50%", translateY: "-50%" }}
-        animate={{ opacity: 1, scale: 1, translateX: "-50%", translateY: "-50%" }}
+        initial={{
+          opacity: 0,
+          scale: 0.5,
+          translateX: "-50%",
+          translateY: "-50%",
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+          translateX: "-50%",
+          translateY: "-50%",
+        }}
         transition={{ duration: 2, ease: "easeInOut" }}
-        style={{ willChange: 'transform', transformStyle: 'preserve-3d' }}
+        style={{ willChange: "transform", transformStyle: "preserve-3d" }}
       />
 
       <div className="max-w-[1200px] mx-auto px-4 relative z-10">
@@ -38,11 +48,7 @@ const Footer = () => {
               convallis. Lacus sed velit adipiscing diam. Donec elementum mi
               lobortis vulputate fringilla duis vitae tempor at.
             </p>
-            <Button
-              href=""
-              variant="solid"
-              className="px-4 py-2 text-lg"
-            >
+            <Button href="" variant="solid" className="px-4 py-2 text-lg">
               Let’s Talk
             </Button>
           </div>
@@ -59,29 +65,35 @@ const Footer = () => {
                   Licensing
                 </Link>
               </div>
-              <div className="flex space-x-1">
+              <div className="flex flex-col md:flex-row md:items-center md:space-x-1 md:mt-2">
+                <div>
+                  <span>Powered by</span>
+                  <Link
+                    href="https://gurukulskills.site"
+                    target="_blank"
+                    className="hover:text-tertiary ml-1"
+                  >
+                    Gurukul Skills
+                  </Link>
+                </div>
+                <div>
+                  <span>Co-powered by</span>
+                  <Link
+                    href="https://adsuper.netlify.app/"
+                    target="_blank"
+                    className="hover:text-tertiary ml-1"
+                  >
+                    ADSuper
+                  </Link>
+                </div>
+              </div>
+              <div className="md:mt-2">
+                Developed by
                 <Link
-                  href="https://wcopilot.com/templates"
-                  target="_blank"
-                  className="hover:text-tertiary"
+                  href="https://www.instagram.com/your_ig_id"
+                  className="hover:text-tertiary ml-1"
                 >
-                  Template
-                </Link>
-                <span>by</span>
-                <Link
-                  href="https://wcopilot.com/"
-                  target="_blank"
-                  className="hover:text-tertiary"
-                >
-                  wCopilot
-                </Link>
-                <span>Powered by</span>
-                <Link
-                  href="https://webflow.com/"
-                  target="_blank"
-                  className="hover:text-tertiary"
-                >
-                  Webflow
+                  mr.damager/Arpit Gupta
                 </Link>
               </div>
             </div>
